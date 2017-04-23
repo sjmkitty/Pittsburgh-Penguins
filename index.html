@@ -40,6 +40,64 @@ body {margin:0;}
   <h2>Scroll this page to see the effect</h2>
   <h2>The navigation bar will stay at the top of the page while scrolling</h2>
 </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/67home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/70home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/72-72Road.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/73home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/73road.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/76road.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/74home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/77home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/77road.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/80road.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/83home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/82Gold.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/90home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/90home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/91Road.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/75thBAger.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/93home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/93Road.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/yrkRoad.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/93home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/JapanHome.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/02Home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/03Home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/07-08Home.jpg" style="width:50%">
+  <img class="mySlides" src="http://pittsburghhockey.net/old-site/PensPages/PensJerseyHistory/Pensjerseyimages/WinterClassic08.jpg" style="width:50%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
 
 </body>
 </html>
